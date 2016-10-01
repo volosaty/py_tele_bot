@@ -23,7 +23,8 @@ output2 = proc.stdout.read()
 proc = subprocess.Popen(["cat", "list_txt"], stdout=subprocess.PIPE)
 output4 = proc.stdout.read()
 
-
+def add(x, y):
+    return x + y
 
 # Handles all text messages that contains the commands '/start' or '/help'.
 @bot.message_handler(commands=['fuck'])
